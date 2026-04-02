@@ -109,16 +109,18 @@ Contributions are welcome! Feel free to fork the repo and submit a pull request.
 
 This project is licensed under the MIT License.
 
----
+
+<img width="1440" height="672" alt="Screenshot 2026-04-02 at 4 31 19 PM" src="https://github.com/user-attachments/assets/cc2f5e07-b840-49c2-8f05-f19eaec32b73" />
+<img width="1440" height="672" alt="Screenshot 2026-04-02 at 4 31 10 PM" src="https://github.com/user-attachments/assets/454ebbf2-1d17-4a10-8001-f9fe6b514bcc" />
+<img width="1440" height="672" alt="Screenshot 2026-04-02 at 4 31 03 PM" src="https://github.com/user-attachments/assets/28c87a57-fb56-4fe4-9f24-8320eb84c83d" />
+<img width="1440" height="672" alt="Screenshot 2026-04-02 at 4 30 39 PM" src="https://github.com/user-attachments/assets/18753936-dc3b-41a4-86b8-f6bbe6bfd870" />
+<img width="1440" height="672" alt="Screenshot 2026-04-02 at 4 30 25 PM" src="https://github.com/user-attachments/assets/8b2f12e4-e718-4e56-b3d4-caaae66c113d" />
+<img width="1440" height="672" alt="Screenshot 2026-04-02 at 4 30 19 PM" src="https://github.com/user-attachments/assets/6413876b-9247-4010-9485-cdd14eb311fa" />
+<img width="1440" height="672" alt="Screenshot 2026-04-02 at 4 30 10 PM" src="https://github.com/user-attachments/assets/3534649b-e5d3-404f-8d88-0d6583a75833" />
+<img width="1440" height="672" alt="Screenshot 2026-04-02 at 4 29 55 PM" src="https://github.com/user-attachments/assets/814eab7c-136f-455d-a266-00ac417fb5fc" />
+<img width="1440" height="672" alt="Screenshot 2026-04-02 at 4 29 47 PM" src="https://github.com/user-attachments/assets/42f7e095-1ea3-468b-af24-8ea2c9e4d2f0" />
 
 ## 👩‍💻 Author
 
-**Janice Mascarenhas**
+*Janice Mascarenhas*
 BSc IT Graduate | Aspiring Data Engineer / AI Engineer
-
----
-
-If you want, I can next:
-
-* Make it **more “resume-level impressive” with metrics (like accuracy, dataset, model type)**
-* Or tailor it specifically for **placements / recruiters (very high impact version)**
