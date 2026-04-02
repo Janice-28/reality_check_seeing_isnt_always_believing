@@ -1,0 +1,118 @@
+2025-03-10 11:04:05,900 - app - INFO - NumPy version: 1.23.5
+2025-03-10 11:04:05,913 - app - INFO - Librosa version: 0.10.1
+2025-03-10 11:04:08,991 - app - INFO - Numba version: 0.57.0
+2025-03-10 11:04:10,675 - app - ERROR - Dependency verification failed - runtime error: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+  - Of which 2 did not match due to:
+  Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+    With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+   Rejected as the implementation raised a specific error:
+     AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 11:04:14,271 - absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+2025-03-10 11:04:14,274 - absl - WARNING - There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.
+2025-03-10 11:04:14,301 - tensorflow - WARNING - Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-03-10 11:04:14,302 - app - INFO - Model loaded successfully from /Users/janicemascarenhas/Documents/RealityCheck/reality_check/DeepFakeAudioDetection/model/audio_classifier.h5
+2025-03-10 11:04:14,302 - app - INFO - Model: "model"
+2025-03-10 11:04:14,302 - app - INFO - _________________________________________________________________
+2025-03-10 11:04:14,302 - app - INFO -  Layer (type)                Output Shape              Param #   
+2025-03-10 11:04:14,303 - app - INFO - =================================================================
+2025-03-10 11:04:14,303 - app - INFO -  input_1 (InputLayer)        [(None, 128, 109, 1)]     0         
+2025-03-10 11:04:14,303 - app - INFO -                                                                  
+2025-03-10 11:04:14,303 - app - INFO -  conv2d (Conv2D)             (None, 126, 107, 32)      320       
+2025-03-10 11:04:14,303 - app - INFO -                                                                  
+2025-03-10 11:04:14,303 - app - INFO -  max_pooling2d (MaxPooling2D  (None, 63, 53, 32)       0         
+2025-03-10 11:04:14,303 - app - INFO -  )                                                               
+2025-03-10 11:04:14,303 - app - INFO -                                                                  
+2025-03-10 11:04:14,303 - app - INFO -  conv2d_1 (Conv2D)           (None, 61, 51, 64)        18496     
+2025-03-10 11:04:14,303 - app - INFO -                                                                  
+2025-03-10 11:04:14,303 - app - INFO -  max_pooling2d_1 (MaxPooling  (None, 30, 25, 64)       0         
+2025-03-10 11:04:14,303 - app - INFO -  2D)                                                             
+2025-03-10 11:04:14,303 - app - INFO -                                                                  
+2025-03-10 11:04:14,303 - app - INFO -  flatten (Flatten)           (None, 48000)             0         
+2025-03-10 11:04:14,303 - app - INFO -                                                                  
+2025-03-10 11:04:14,304 - app - INFO -  dense (Dense)               (None, 128)               6144128   
+2025-03-10 11:04:14,304 - app - INFO -                                                                  
+2025-03-10 11:04:14,304 - app - INFO -  dropout (Dropout)           (None, 128)               0         
+2025-03-10 11:04:14,304 - app - INFO -                                                                  
+2025-03-10 11:04:14,304 - app - INFO -  dense_1 (Dense)             (None, 2)                 258       
+2025-03-10 11:04:14,304 - app - INFO -                                                                  
+2025-03-10 11:04:14,304 - app - INFO - =================================================================
+2025-03-10 11:04:14,304 - app - INFO - Total params: 6,163,202
+2025-03-10 11:04:14,304 - app - INFO - Trainable params: 6,163,202
+2025-03-10 11:04:14,304 - app - INFO - Non-trainable params: 0
+2025-03-10 11:04:14,304 - app - INFO - _________________________________________________________________
+2025-03-10 11:04:14,450 - app - INFO - Test prediction: [[0.8043508  0.19564924]]
+2025-03-10 11:04:22,507 - app - INFO - NumPy version: 1.23.5
+2025-03-10 11:04:22,510 - app - INFO - Librosa version: 0.10.1
+2025-03-10 11:04:22,654 - app - INFO - Numba version: 0.57.0
+2025-03-10 11:04:23,153 - app - ERROR - Dependency verification failed - runtime error: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+  - Of which 2 did not match due to:
+  Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+    With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+   Rejected as the implementation raised a specific error:
+     AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 11:04:27,115 - absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+2025-03-10 11:04:27,119 - absl - WARNING - There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.
+2025-03-10 11:04:27,156 - tensorflow - WARNING - Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-03-10 11:04:27,157 - app - INFO - Model loaded successfully from /Users/janicemascarenhas/Documents/RealityCheck/reality_check/DeepFakeAudioDetection/model/audio_classifier.h5
+2025-03-10 11:04:27,157 - app - INFO - Model: "model"
+2025-03-10 11:04:27,157 - app - INFO - _________________________________________________________________
+2025-03-10 11:04:27,157 - app - INFO -  Layer (type)                Output Shape              Param #   
+2025-03-10 11:04:27,157 - app - INFO - =================================================================
+2025-03-10 11:04:27,157 - app - INFO -  input_1 (InputLayer)        [(None, 128, 109, 1)]     0         
+2025-03-10 11:04:27,157 - app - INFO -                                                                  
+2025-03-10 11:04:27,158 - app - INFO -  conv2d (Conv2D)             (None, 126, 107, 32)      320       
+2025-03-10 11:04:27,158 - app - INFO -                                                                  
+2025-03-10 11:04:27,158 - app - INFO -  max_pooling2d (MaxPooling2D  (None, 63, 53, 32)       0         
+2025-03-10 11:04:27,158 - app - INFO -  )                                                               
+2025-03-10 11:04:27,158 - app - INFO -                                                                  
+2025-03-10 11:04:27,158 - app - INFO -  conv2d_1 (Conv2D)           (None, 61, 51, 64)        18496     
+2025-03-10 11:04:27,158 - app - INFO -                                                                  
+2025-03-10 11:04:27,158 - app - INFO -  max_pooling2d_1 (MaxPooling  (None, 30, 25, 64)       0         
+2025-03-10 11:04:27,158 - app - INFO -  2D)                                                             
+2025-03-10 11:04:27,158 - app - INFO -                                                                  
+2025-03-10 11:04:27,158 - app - INFO -  flatten (Flatten)           (None, 48000)             0         
+2025-03-10 11:04:27,158 - app - INFO -                                                                  
+2025-03-10 11:04:27,158 - app - INFO -  dense (Dense)               (None, 128)               6144128   
+2025-03-10 11:04:27,158 - app - INFO -                                                                  
+2025-03-10 11:04:27,158 - app - INFO -  dropout (Dropout)           (None, 128)               0         
+2025-03-10 11:04:27,158 - app - INFO -                                                                  
+2025-03-10 11:04:27,158 - app - INFO -  dense_1 (Dense)             (None, 2)                 258       
+2025-03-10 11:04:27,158 - app - INFO -                                                                  
+2025-03-10 11:04:27,158 - app - INFO - =================================================================
+2025-03-10 11:04:27,158 - app - INFO - Total params: 6,163,202
+2025-03-10 11:04:27,158 - app - INFO - Trainable params: 6,163,202
+2025-03-10 11:04:27,158 - app - INFO - Non-trainable params: 0
+2025-03-10 11:04:27,158 - app - INFO - _________________________________________________________________
+2025-03-10 11:04:27,301 - app - INFO - Test prediction: [[0.8043508  0.19564924]]

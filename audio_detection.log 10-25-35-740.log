@@ -1,0 +1,468 @@
+2025-03-10 12:47:19,524 - app - INFO - Audio processing dependencies loaded successfully
+2025-03-10 12:47:24,906 - app - INFO - TensorFlow loaded successfully
+2025-03-10 12:47:25,044 - absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+2025-03-10 12:47:25,048 - absl - WARNING - There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.
+2025-03-10 12:47:25,076 - tensorflow - WARNING - Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-03-10 12:47:25,077 - app - INFO - Model loaded successfully from /Users/janicemascarenhas/Documents/RealityCheck/reality_check/DeepFakeAudioDetection/model/audio_classifier.h5
+2025-03-10 12:47:25,094 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8003
+ * Running on http://192.168.188.92:8003
+2025-03-10 12:47:25,094 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-10 12:47:29,420 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 12:47:29] "GET / HTTP/1.1" 200 -
+2025-03-10 12:47:36,712 - app - INFO - Processing file: DeepfakeExample5.wav
+2025-03-10 12:47:38,086 - app - WARNING - Resampling failed: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+  - Of which 2 did not match due to:
+  Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+    With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+   Rejected as the implementation raised a specific error:
+     AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:47:38,260 - app - ERROR - Error extracting mel spectrogram: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+    - Of which 2 did not match due to:
+    Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+      With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+     Rejected as the implementation raised a specific error:
+       AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:47:38,464 - app - WARNING - Pitch calculation error: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+      - Of which 2 did not match due to:
+      Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+        With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+       Rejected as the implementation raised a specific error:
+         AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:47:38,624 - app - WARNING - MFCC calculation error: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+      - Of which 2 did not match due to:
+      Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+        With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+       Rejected as the implementation raised a specific error:
+         AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:47:38,786 - app - WARNING - Spectral contrast calculation error: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+      - Of which 2 did not match due to:
+      Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+        With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+       Rejected as the implementation raised a specific error:
+         AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:47:38,813 - app - WARNING - Harmonic-percussive separation error: No module named 'sklearn.decomposition'
+2025-03-10 12:47:38,985 - app - WARNING - Spectral flatness calculation error: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+      - Of which 2 did not match due to:
+      Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+        With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+       Rejected as the implementation raised a specific error:
+         AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:47:38,985 - app - WARNING - Model not available or features extraction failed, using heuristic prediction
+2025-03-10 12:47:38,985 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 12:47:38] "POST /predict HTTP/1.1" 200 -
+2025-03-10 12:48:14,559 - app - INFO - Audio processing dependencies loaded successfully
+2025-03-10 12:48:19,376 - app - INFO - TensorFlow loaded successfully
+2025-03-10 12:48:19,491 - absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+2025-03-10 12:48:19,495 - absl - WARNING - There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.
+2025-03-10 12:48:19,516 - tensorflow - WARNING - Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-03-10 12:48:19,517 - app - INFO - Model loaded successfully from /Users/janicemascarenhas/Documents/RealityCheck/reality_check/DeepFakeAudioDetection/model/audio_classifier.h5
+2025-03-10 12:48:19,529 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8003
+ * Running on http://192.168.188.92:8003
+2025-03-10 12:48:19,529 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-10 12:48:25,422 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 12:48:25] "GET / HTTP/1.1" 200 -
+2025-03-10 12:48:29,956 - app - INFO - Processing file: DeepfakeExample5.wav
+2025-03-10 12:48:31,444 - app - WARNING - Resampling failed: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+  - Of which 2 did not match due to:
+  Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+    With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+   Rejected as the implementation raised a specific error:
+     AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:48:31,632 - app - ERROR - Error extracting mel spectrogram: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+    - Of which 2 did not match due to:
+    Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+      With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+     Rejected as the implementation raised a specific error:
+       AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:48:31,936 - app - WARNING - Pitch calculation error: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+      - Of which 2 did not match due to:
+      Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+        With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+       Rejected as the implementation raised a specific error:
+         AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:48:32,097 - app - WARNING - MFCC calculation error: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+      - Of which 2 did not match due to:
+      Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+        With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+       Rejected as the implementation raised a specific error:
+         AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:48:32,260 - app - WARNING - Spectral contrast calculation error: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+      - Of which 2 did not match due to:
+      Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+        With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+       Rejected as the implementation raised a specific error:
+         AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:48:32,287 - app - WARNING - Harmonic-percussive separation error: No module named 'sklearn.decomposition'
+2025-03-10 12:48:32,458 - app - WARNING - Spectral flatness calculation error: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+      - Of which 2 did not match due to:
+      Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+        With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+       Rejected as the implementation raised a specific error:
+         AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:48:32,458 - app - WARNING - Model not available or features extraction failed, using heuristic prediction
+2025-03-10 12:48:32,459 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 12:48:32] "POST /predict HTTP/1.1" 200 -
+2025-03-10 12:48:49,134 - app - INFO - Audio processing dependencies loaded successfully
+2025-03-10 12:48:53,399 - app - INFO - TensorFlow loaded successfully
+2025-03-10 12:48:53,552 - absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+2025-03-10 12:48:53,555 - absl - WARNING - There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.
+2025-03-10 12:48:53,576 - tensorflow - WARNING - Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-03-10 12:48:53,577 - app - INFO - Model loaded successfully from /Users/janicemascarenhas/Documents/RealityCheck/reality_check/DeepFakeAudioDetection/model/audio_classifier.h5
+2025-03-10 12:48:53,602 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8003
+ * Running on http://192.168.188.92:8003
+2025-03-10 12:48:53,602 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-10 12:48:56,877 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 12:48:56] "GET / HTTP/1.1" 200 -
+2025-03-10 12:49:01,586 - app - INFO - Processing file: DeepfakeExample5.wav
+2025-03-10 12:49:02,958 - app - WARNING - Resampling failed: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+  - Of which 2 did not match due to:
+  Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+    With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+   Rejected as the implementation raised a specific error:
+     AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:49:03,126 - app - ERROR - Error extracting mel spectrogram: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+    - Of which 2 did not match due to:
+    Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+      With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+     Rejected as the implementation raised a specific error:
+       AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:49:03,325 - app - WARNING - Pitch calculation error: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+      - Of which 2 did not match due to:
+      Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+        With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+       Rejected as the implementation raised a specific error:
+         AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:49:03,483 - app - WARNING - MFCC calculation error: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+      - Of which 2 did not match due to:
+      Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+        With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+       Rejected as the implementation raised a specific error:
+         AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:49:03,641 - app - WARNING - Spectral contrast calculation error: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+      - Of which 2 did not match due to:
+      Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+        With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+       Rejected as the implementation raised a specific error:
+         AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:49:03,665 - app - WARNING - Harmonic-percussive separation error: No module named 'sklearn.decomposition'
+2025-03-10 12:49:03,826 - app - WARNING - Spectral flatness calculation error: Failed in nopython mode pipeline (step: native lowering)
+Failed in nopython mode pipeline (step: nopython frontend)
+No implementation of function Function(<built-in function empty>) found for signature:
+ 
+ >>> empty(UniTuple(int64 x 1), dtype=class(bool))
+ 
+There are 2 candidate implementations:
+      - Of which 2 did not match due to:
+      Overload in function 'ol_np_empty': File: numba/np/arrayobj.py: Line 4237.
+        With argument(s): '(UniTuple(int64 x 1), dtype=class(bool))':
+       Rejected as the implementation raised a specific error:
+         AttributeError: 'function' object has no attribute 'get_call_template'
+  raised from /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/numba/core/types/functions.py:541
+
+During: resolving callee type: Function(<built-in function empty>)
+During: typing of call at <string> (3)
+
+
+File "<string>", line 3:
+<source missing, REPL/exec in use?>
+
+During: lowering "$10call_function.4 = call $2load_global.0(x, threshold, zero_pos, func=$2load_global.0, args=[Var(x, audio.py:1152), Var(threshold, audio.py:1152), Var(zero_pos, audio.py:1152)], kws=(), vararg=None, varkwarg=None, target=None)" at /Users/janicemascarenhas/.pyenv/versions/3.10.12/lib/python3.10/site-packages/librosa/core/audio.py (1168)
+2025-03-10 12:49:03,826 - app - WARNING - Model not available or features extraction failed, using heuristic prediction
+2025-03-10 12:49:03,827 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 12:49:03] "POST /predict HTTP/1.1" 200 -
+2025-03-11 21:37:49,033 - app - INFO - Audio processing dependencies loaded successfully
+2025-03-11 21:37:53,400 - app - INFO - TensorFlow loaded successfully
+2025-03-11 21:37:53,536 - absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+2025-03-11 21:37:53,540 - absl - WARNING - There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.
+2025-03-11 21:37:53,560 - tensorflow - WARNING - Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-03-11 21:37:53,561 - app - INFO - Model loaded successfully from /Users/janicemascarenhas/Documents/RealityCheck/reality_check/DeepFakeAudioDetection/model/audio_classifier.h5
+2025-03-11 21:37:53,574 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8003
+ * Running on http://192.168.188.92:8003
+2025-03-11 21:37:53,574 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-12 10:57:59,532 - app - INFO - Audio processing dependencies loaded successfully
+2025-03-12 10:58:04,729 - app - INFO - TensorFlow loaded successfully
+2025-03-12 10:58:04,878 - absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+2025-03-12 10:58:04,881 - absl - WARNING - There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.
+2025-03-12 10:58:04,902 - tensorflow - WARNING - Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-03-12 10:58:04,903 - app - INFO - Model loaded successfully from /Users/janicemascarenhas/Documents/RealityCheck/reality_check/DeepFakeAudioDetection/model/audio_classifier.h5
+2025-03-12 10:58:04,915 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8003
+ * Running on http://192.168.1.179:8003
+2025-03-12 10:58:04,915 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-12 10:58:13,334 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2025 10:58:13] "GET / HTTP/1.1" 200 -
+2025-03-12 10:58:13,690 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2025 10:58:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
